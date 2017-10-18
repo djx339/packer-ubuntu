@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Add no-password sudo config for vagrant user
-echo "%vagrant ALL=NOPASSWD:ALL" > /etc/sudoers.d/vagrant
+echo "vagrant ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/vagrant
 chmod 0440 /etc/sudoers.d/vagrant
 
 # Add vagrant to sudo group
